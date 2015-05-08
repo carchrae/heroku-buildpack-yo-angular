@@ -2,7 +2,7 @@
 
 set -e            # fail fast
 set -o pipefail   # don't ignore exit codes when piping output
-# set -x          # enable debugging
+set -x          # enable debugging
 
 # Configure directories
 build_dir=$1
@@ -203,4 +203,5 @@ fi
 
 # Remove some common bulk to reduce slug size
 rm -rf .bowerrc .editorconfig .git .gitattributes .gitignore .jshintrc .travis.yml .tmp .sass-cache
-rm -rf Gruntfile.js app bower_components bower.json karma-e2e.conf.js karma.conf.js package.json test
+#rm -rf Gruntfile.js app bower_components bower.json karma-e2e.conf.js karma.conf.js package.json test
+rm -rf client
